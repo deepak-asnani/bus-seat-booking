@@ -1,0 +1,69 @@
+.bus {
+  border-left: 5px solid grey;
+  height: 40vh;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.bus-map,
+.seats,
+.seat-map,
+.double-seats,
+.single-seats, .seat, .last-seat {
+  display: flex;
+}
+
+.seats, .single-seats{
+    gap: 1em;
+}
+
+.bus-map {
+  justify-content: space-between;
+  height: 100%;
+  gap: 1em
+}
+
+.seat-map,
+.double-seats {
+  flex-direction: column;
+}
+
+.double-seats{
+    gap: 1em;
+}
+
+.steering-wheel{
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 0 0;
+}
+
+.steering-wheel img {
+    width: 20px;
+    height: 20px;
+}
+
+.seat-map {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.seat{
+    border: 1px solid black;
+    margin: 5px;
+    justify-content: end;
+    align-items: center;
+}
+
+.seat-head{
+    width: 7px;
+    height: 12px;
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid black;
+    margin-right: 2px;
+}
+
+.last-seat{
+    align-items: center;
+}

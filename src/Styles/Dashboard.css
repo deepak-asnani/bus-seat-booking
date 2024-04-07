@@ -1,0 +1,38 @@
+/* Dashboard.css */
+
+.passenger-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .passenger-card p {
+    margin: 5px 0;
+  }
+  
+  .passenger-card p:first-child {
+    font-weight: bold;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .edit-btn:hover,
+  .delete-btn:hover {
+    background-color: #0056b3;
+  }
+  

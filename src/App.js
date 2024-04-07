@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Styles/App.css";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import BusSeatBooking from "./Pages/BusSeatBooking";
+import Dashboard from "./Pages/Dashboard";
+import Navbar from "./Components/Navbar";
 
 function App() {
+  const navigate = useNavigate();
+  const handleOptionChange = (optionId) => {
+    console.log("option id:- ", optionId);
+    switch (optionId) {
+      case "1": {
+        navigate("/");
+        break;
+      }
+
+      case "2": {
+        navigate("/dashboard");
+        break;
+      }
+
+      default: {
+        navigate("/");
+        break;
+      }
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar
+        handleOptionChange={handleOptionChange}
+      />
+      <Routes>
+        <Route exact path="/" Component={BusSeatBooking}></Route>
+        <Route path="/dashboard" Component={Dashboard}></Route>
+      </Routes>
     </div>
   );
 }
