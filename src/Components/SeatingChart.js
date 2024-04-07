@@ -34,7 +34,7 @@ const Seat = ({
         },
         border: `1px solid ${seatBorderColor}`,
       }}
-      onClick={() => onSelect(seatId)}
+      onClick={isBooked ? null : () => onSelect(seatId)}
     >
       <div className="seat-head"></div>
       <Tooltip id="my-tooltip" />
