@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../Styles/Form.css";
+import "../Form.css";
 
 const Form = ({
   selectedSeat,
