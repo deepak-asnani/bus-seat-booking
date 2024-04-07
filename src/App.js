@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Styles/App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import BusSeatBooking from "./Pages/BusSeatBooking";
 import Dashboard from "./Pages/Dashboard";

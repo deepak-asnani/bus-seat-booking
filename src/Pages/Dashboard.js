@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Form from "../Components/Form";
-import "../Dashboard.css";
+import "../Styles/Dashboard.css";
 
 const PassengerDetailsCard = ({
   name,

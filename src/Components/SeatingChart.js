@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../SeatingChart.css";
+import "../Styles/SeatingChart.css";
 import { Tooltip } from "react-tooltip";
 import Form from "./Form";
 
